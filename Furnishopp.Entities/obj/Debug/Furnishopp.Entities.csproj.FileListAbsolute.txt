@@ -1,0 +1,7 @@
+C:\Users\Asus\source\repos\Furnishopp\Furnishopp.Entities\bin\Debug\Furnishopp.Entities.dll
+C:\Users\Asus\source\repos\Furnishopp\Furnishopp.Entities\bin\Debug\Furnishopp.Entities.pdb
+C:\Users\Asus\source\repos\Furnishopp\Furnishopp.Entities\obj\Debug\Furnishopp.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Asus\source\repos\Furnishopp\Furnishopp.Entities\obj\Debug\Furnishopp.Entities.dll
+C:\Users\Asus\source\repos\Furnishopp\Furnishopp.Entities\obj\Debug\Furnishopp.Entities.pdb
+C:\Users\Asus\source\repos\Furnishopp\Furnishopp.Entities\bin\Debug\Furnishopp.Entities.dll.config
+C:\Users\Asus\source\repos\Furnishopp\Furnishopp.Entities\obj\Debug\Furnishopp.Entities.csproj.AssemblyReference.cache

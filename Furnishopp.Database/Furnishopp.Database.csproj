@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E949169C-EDA5-480F-A002-D44B9F4AC352}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Furnishopp.Database</RootNamespace>
+    <AssemblyName>Furnishopp.Database</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FSContext.cs" />
+    <Compile Include="Migrations\202109180857409_Prototype.cs" />
+    <Compile Include="Migrations\202109180857409_Prototype.designer.cs">
+      <DependentUpon>202109180857409_Prototype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109201753161_Added.cs" />
+    <Compile Include="Migrations\202109201753161_Added.Designer.cs">
+      <DependentUpon>202109201753161_Added.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109211019462_AddedIsfeatured.cs" />
+    <Compile Include="Migrations\202109211019462_AddedIsfeatured.Designer.cs">
+      <DependentUpon>202109211019462_AddedIsfeatured.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109291758216_configurationsAdded.cs" />
+    <Compile Include="Migrations\202109291758216_configurationsAdded.Designer.cs">
+      <DependentUpon>202109291758216_configurationsAdded.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110010803033_ImageURLinProducts.cs" />
+    <Compile Include="Migrations\202110010803033_ImageURLinProducts.Designer.cs">
+      <DependentUpon>202110010803033_ImageURLinProducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110011526112_addedBasicValidations.cs" />
+    <Compile Include="Migrations\202110011526112_addedBasicValidations.Designer.cs">
+      <DependentUpon>202110011526112_addedBasicValidations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110030612249_addedCategoryIDInProduct.cs" />
+    <Compile Include="Migrations\202110030612249_addedCategoryIDInProduct.Designer.cs">
+      <DependentUpon>202110030612249_addedCategoryIDInProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110031245240_OrderFinalAndOrderItem.cs" />
+    <Compile Include="Migrations\202110031245240_OrderFinalAndOrderItem.Designer.cs">
+      <DependentUpon>202110031245240_OrderFinalAndOrderItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110031423213_droppedwrongOrder.cs" />
+    <Compile Include="Migrations\202110031423213_droppedwrongOrder.Designer.cs">
+      <DependentUpon>202110031423213_droppedwrongOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Furnishopp.Entities\Furnishopp.Entities.csproj">
+      <Project>{2510e4e8-19bb-4406-a679-d1ecbd263993}</Project>
+      <Name>Furnishopp.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109180857409_Prototype.resx">
+      <DependentUpon>202109180857409_Prototype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109201753161_Added.resx">
+      <DependentUpon>202109201753161_Added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109211019462_AddedIsfeatured.resx">
+      <DependentUpon>202109211019462_AddedIsfeatured.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109291758216_configurationsAdded.resx">
+      <DependentUpon>202109291758216_configurationsAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110010803033_ImageURLinProducts.resx">
+      <DependentUpon>202110010803033_ImageURLinProducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110011526112_addedBasicValidations.resx">
+      <DependentUpon>202110011526112_addedBasicValidations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110030612249_addedCategoryIDInProduct.resx">
+      <DependentUpon>202110030612249_addedCategoryIDInProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110031245240_OrderFinalAndOrderItem.resx">
+      <DependentUpon>202110031245240_OrderFinalAndOrderItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110031423213_droppedwrongOrder.resx">
+      <DependentUpon>202110031423213_droppedwrongOrder.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
